@@ -6,9 +6,15 @@
              Title="FAQ">
     <ContentPage.Content>
 
+        <ScrollView>
             <StackLayout Margin="30"
                          Orientation="Vertical"
                          HorizontalOptions="Center">
+
+                <Image Source="https://imgur.com/yYSGcYO.png" 
+                   WidthRequest="200"
+                   HeightRequest="200"
+                   Aspect="AspectFit"/>
 
                 <Label Text="FAQ"
                    FontSize="Large"
@@ -16,40 +22,41 @@
                    FontAttributes="Bold"
                    HorizontalOptions="Center"/>
 
-            <StackLayout Margin="50">
-                <Label Text="Q. What is the purpose of this application?"
+                <StackLayout Margin="50">
+                    <Label Text="Q. What is the purpose of this application?"
                        FontSize="Medium"
                        TextColor="#f27eb1"
                        FontAttributes="Bold"
                        HorizontalOptions="Start"/>
-                <Label Text="This is a one-day project for the deerhacks hack-a-thon in UTM. This was a solo project done by Melissa, a First Year Student in Mobile Computing."
+                    <Label Text="This is a one-day project for the deerhacks hack-a-thon in UTM. This was a solo project done by Melissa, a First Year Student in Mobile Computing."
                        FontSize="Small"
                        TextColor="#4d4d4d"
                        HorizontalOptions="Start"/>
 
-                <Label Text="Q. What does this application demonstrate?"
+                    <Label Text="Q. What does this application demonstrate?"
                        FontSize="Medium"
                        TextColor="#f27eb1"
                        FontAttributes="Bold"
                        HorizontalOptions="Start"/>
-                <Label Text="My goal for this project is to learn new things such as using flyout tabs in xamarin, and creating tables, inserting and removing from databases using SQLite."
+                    <Label Text="My goal for this project is to learn new things such as using flyout tabs in xamarin, creating tables, inserting and removing from databases using SQLite."
                        FontSize="Small"
                        TextColor="#4d4d4d"
                        HorizontalOptions="Start"/>
 
-                <Label Text="Q. Additional notes"
+                    <Label Text="Q. How does it work?"
                        FontSize="Medium"
                        TextColor="#f27eb1"
                        FontAttributes="Bold"
                        HorizontalOptions="Start"/>
-                <Label Text="Placeholder"
+                    <Label Text="On the homepage, just click 'Add Task' and then it will save it to the database. Remove tasks on the list by clicking it in the listview."
                        FontSize="Small"
                        TextColor="#4d4d4d"
                        HorizontalOptions="Start"/>
 
+
+                </StackLayout>
 
             </StackLayout>
-
-        </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

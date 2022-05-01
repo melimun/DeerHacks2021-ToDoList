@@ -5,8 +5,12 @@
              Title="Tasks"
              NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
-
         <StackLayout Margin="30">
+
+            <Image Source="https://imgur.com/zNVZVf0.png"
+               Aspect="AspectFit"
+               WidthRequest="150"
+               HeightRequest="150"/>
 
             <Label Text="Tasks"
                    FontSize="Large"

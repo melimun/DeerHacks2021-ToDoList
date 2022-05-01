@@ -19,7 +19,7 @@ namespace ToDoListDeerHacks2021
 
         private async void Button_Clicked(object sender, EventArgs e)
         {
-            await TaskService.AddTask(titleEntry.Text, dateEntry.Date.ToString("MMyyyy"), descriptionEntry.Text);
+            await TaskService.AddTask(titleEntry.Text, dateEntry.Date.ToString("MM/dd/yyyy"), descriptionEntry.Text);
             await TaskService.GetAllTasks();
             await DisplayAlert("Added Task", "Successfully Added Task", "Ok");
 
