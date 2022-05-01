@@ -8,11 +8,16 @@
 
         <StackLayout Margin="30">
 
-            <Label x:Name="label"
-                    Text="Tasks"
+            <Label Text="Tasks"
                    FontSize="Large"
                    TextColor="#8f8fef"
                    FontAttributes="Bold"
+                   HorizontalOptions="Center"/>
+
+            <Label Text="Tap To Clear"
+                   FontSize="Small"
+                   FontAttributes="Italic"
+                   TextColor="#4d4d4d"
                    HorizontalOptions="Center"/>
 
             <ListView x:Name="tasklistview"
@@ -32,7 +37,7 @@
 
                                 <Label Text="{Binding details}"
                                        FontSize="12"/>
-                                
+
 
                             </Frame>
 

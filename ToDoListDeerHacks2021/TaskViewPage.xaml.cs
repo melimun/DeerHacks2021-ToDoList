@@ -33,5 +33,6 @@ namespace ToDoListDeerHacks2021
             await TaskService.RemoveTask(selecteditem.id);
             OnAppearing();
         }
+
     }
 }

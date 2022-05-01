@@ -5,10 +5,51 @@
              NavigationPage.HasNavigationBar="False"
              Title="FAQ">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to FAQ!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+
+            <StackLayout Margin="30"
+                         Orientation="Vertical"
+                         HorizontalOptions="Center">
+
+                <Label Text="FAQ"
+                   FontSize="Large"
+                   TextColor="#8f8fef"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"/>
+
+            <StackLayout Margin="50">
+                <Label Text="Q. What is the purpose of this application?"
+                       FontSize="Medium"
+                       TextColor="#f27eb1"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Start"/>
+                <Label Text="This is a one-day project for the deerhacks hack-a-thon in UTM. This was a solo project done by Melissa, a First Year Student in Mobile Computing."
+                       FontSize="Small"
+                       TextColor="#4d4d4d"
+                       HorizontalOptions="Start"/>
+
+                <Label Text="Q. What does this application demonstrate?"
+                       FontSize="Medium"
+                       TextColor="#f27eb1"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Start"/>
+                <Label Text="My goal for this project is to learn new things such as using flyout tabs in xamarin, and creating tables, inserting and removing from databases using SQLite."
+                       FontSize="Small"
+                       TextColor="#4d4d4d"
+                       HorizontalOptions="Start"/>
+
+                <Label Text="Q. Additional notes"
+                       FontSize="Medium"
+                       TextColor="#f27eb1"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Start"/>
+                <Label Text="Placeholder"
+                       FontSize="Small"
+                       TextColor="#4d4d4d"
+                       HorizontalOptions="Start"/>
+
+
+            </StackLayout>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
