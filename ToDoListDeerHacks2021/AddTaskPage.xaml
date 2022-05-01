@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ToDoListDeerHacks2021.AddTaskPage"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical"
+                     Margin="50">
+
+            <Image Source="https://imgur.com/YPTjYMX.png" 
+                   WidthRequest="200"
+                   HeightRequest="200"
+                   Aspect="AspectFit"/>
+
+            <!-- Task Title -->
+            
+            <Label Text="Task Title"
+                   FontSize="Medium"
+                   TextColor="#8f8fef"
+                   FontAttributes="Bold"/>
+            
+            <Entry Placeholder="Task Title"
+                   x:Name="titleEntry"
+                   Keyboard="Default"
+                   PropertyChanged="Label_PropertyChanged"/>
+
+            <!-- Date Due -->
+
+            <Label Text="Date Due"
+                   FontSize="Medium"
+                   TextColor="#8f8fef"
+                   FontAttributes="Bold"/>
+
+            <DatePicker x:Name="dateEntry"
+                        MinimumDate="01/01/2022"
+                        MaximumDate="12/31/2022"
+                        Date="05/01/2022" 
+                        PropertyChanged="Label_PropertyChanged"/>
+
+            <!-- Description -->
+
+            <Label Text="Description"
+                   FontSize="Medium"
+                   TextColor="#8f8fef"
+                   FontAttributes="Bold"/>
+
+            <Entry Placeholder="Description of Task"
+                   x:Name="descriptionEntry"
+                   Keyboard="Default"
+                   PropertyChanged="Label_PropertyChanged"/>
+            
+            <!-- Submit -->
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="Center">
+                <Button Text="Submit"
+                    x:Name="submitbtn"
+                    FontAttributes="Bold"
+                    BackgroundColor="#ffa766"
+                    TextColor="White"
+                    CornerRadius="20"
+
+                    Clicked="Button_Clicked"/>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

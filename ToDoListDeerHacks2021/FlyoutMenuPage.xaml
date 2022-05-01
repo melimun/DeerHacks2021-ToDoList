@@ -4,6 +4,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:ToDoListDeerHacks2021"
              x:Class="ToDoListDeerHacks2021.FlyoutMenuPage"
+             NavigationPage.HasNavigationBar="False"
              Title="FlyoutMenu">
 
 

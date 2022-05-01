@@ -2,12 +2,41 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ToDoListDeerHacks2021.HomePage"
+             NavigationPage.HasNavigationBar="False"
              Title="Home">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to HomePage!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Orientation="Vertical"
+                     Margin="50">
+            <Image Source="https://imgur.com/2VJhYJM.png"
+                   WidthRequest="200"
+                   HeightRequest="200"
+                   Aspect="AspectFit"/>
+
+            <Label Text="Welcome to ToDo!"
+                   FontSize="Title"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"
+                   TextColor="#8f8fef"/>
+            <Label Text="Developed by Melissa Munoz for DeerHacks2021"
+                   FontSize="Micro"
+                   HorizontalTextAlignment="Center"
+                   TextColor="#5f5f81"/>
+
+            
+            
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="Center">
+
+                <Button Text="Add Task"
+                        TextColor="White"
+                        BackgroundColor="#ffa766"
+                        FontSize="Subtitle"
+                        FontAttributes="Bold"
+                        CornerRadius="20"
+                        Clicked="Button_Clicked"/>
+
+            </StackLayout>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

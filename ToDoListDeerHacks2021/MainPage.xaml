@@ -2,8 +2,7 @@
 <FlyoutPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local ="clr-namespace:ToDoListDeerHacks2021"
-             x:Class="ToDoListDeerHacks2021.MainPage"
-             Title="Menu">
+             x:Class="ToDoListDeerHacks2021.MainPage">
 
     <FlyoutPage.Flyout>
         <local:FlyoutMenuPage x:Name="flyout"/>

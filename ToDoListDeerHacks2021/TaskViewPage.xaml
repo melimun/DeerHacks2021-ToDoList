@@ -2,12 +2,48 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ToDoListDeerHacks2021.TaskViewPage"
-             Title="Tasks">
+             Title="Tasks"
+             NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+
+        <StackLayout Margin="30">
+
+            <Label x:Name="label"
+                    Text="Tasks"
+                   FontSize="Large"
+                   TextColor="#8f8fef"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"/>
+
+            <ListView x:Name="tasklistview"
+                      IsPullToRefreshEnabled="True"
+                      CachingStrategy="RecycleElement"
+                      RowHeight="150"
+                      ItemTapped="tasklistview_ItemTapped">
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+
+                            <Frame Margin="10"
+                                   CornerRadius="20"
+                                   HasShadow="True"
+                                   IsClippedToBounds="True">
+
+                                <Label Text="{Binding details}"
+                                       FontSize="12"/>
+                                
+
+                            </Frame>
+
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                
+            </ListView>
+            
+            
         </StackLayout>
+        
     </ContentPage.Content>
 </ContentPage>
